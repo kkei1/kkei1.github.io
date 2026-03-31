@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Me</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #f8b4b4, #fce7d8);
+    text-align: center;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+    padding: 40px 20px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
+    color: #d86c7a;
+    letter-spacing: 3px;
+}
+
+h2 {
+    font-weight: 300;
+    color: #555;
+}
+
+/* 🐱 FLOATING PUSHEENS */
+.pusheen {
+    position: fixed;
+    width: 90px;
+    animation: float 4s ease-in-out infinite;
+    z-index: 0;
+}
+
+.p1 { top: 20px; left: 20px; }
+.p2 { bottom: 20px; right: 20px; }
+.p3 { top: 50%; left: 10px; }
+.p4 { top: 50%; right: 10px; }
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+
+/* CARD */
+.card {
+    background: white;
+    width: 80%;
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
+}
+
+/* INTRO CARD LEFT ALIGN */
+.intro-card {
+    text-align: left; /* left-align the intro card */
+}
+
+/* INTRO BOX */
+.intro-box {
+    display: flex; /* side by side */
+    align-items: center;
+    gap: 20px;
+}
+
+.intro-box img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.intro-text h1 {
+    color: #e57373;
+    margin: 0 0 10px 0;
+    font-size: 2em;
+}
+
+.intro-text p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* TITLES */
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    color: #d86c7a;
+    margin-bottom: 10px;
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center; 
+}
+
+.skills span {
+    background: linear-gradient(135deg, #f8b4b4, #fcd5ce);
+    padding: 10px 18px;
+    margin: 6px;
+    border-radius: 25px;
+    font-size: 14px;
+    color: white;
+    transition: 0.3s;
+}
+
+.skills span:hover {
+    transform: scale(1.1);
+        text-decoration: none;
+}
+/* SOCIAL BUTTONS */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    min-width: 150px;
+    text-align: center;
+    background: linear-gradient(135deg, #f8b4b4, #fcd5ce);
+    color: white;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(248, 180, 180, 0.7);
+}
+
+/* FOOTER */
+footer {
+    margin: 30px;
+    font-size: 14px;
+    color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<!-- FLOATING PUSHEENS -->
+<img src="pusheen3.png" class="pusheen p1">
+<img src="https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/pusheen.png" class="pusheen p2">
+<img src="pusheen2.png" class="pusheen p3">
+<img src="pusheen4.png" class="pusheen p4">
+
+<header>
+    <h1>MY SPACE !!</h1>
+    <h2>All About Me :3</h2>
+</header>
+
+<!-- INTRO CARD -->
+<div class="card intro-card">
+    <div class="intro-box">
+        <img src="pic2.jpeg" alt="Profile Picture">
+        <div class="intro-text">
+            <h1>Hello 👋</h1>
+            <p>Hi! My name is Asley, you can call me Ley in short. I am from the section 11-TA, I hope you learn more about me with this, myspace !</p>
+        </div>
+    </div>
+</div>
+
+<!-- SKILLS CARD (CENTERED) -->
+<div class="card">
+    <div class="section-title">🌸 //Hobbies ^_^</div>
+    <div class="skills">
+        <span>🎧 Listening to music</span>
+        <span>🎥 Watching movies</span>
+        <span>👾 Gaming</span>
+        <span>🔖 Reading mangas</span>
+        <span>🛹 Skateboarding</span>
+        <span>🐈‍⬛ Going out for walks/Hanging out</span>
+        <span>
+            <a href="nextpage.html" target="_blank" class=".skills More">More about me...</a>
+        </span>
+    </div>
+</div>
+
+<!-- SOCIALS CARD (CENTERED) -->
+<div class="card">
+    <div class="section-title">Socials 🐱</div>
+    <div class="social-buttons">
+        <a href="https://www.instagram.com/laiilailaileyyley/" target="_blank" class="btn">📸 Instagram</a>
+        <a href="https://www.roblox.com/users/4584970691/profile" target="_blank" class="btn">🎮 Roblox</a>
+    </div>
+</div>
+
+<footer>
+   all about ley :D
+</footer>
+
+</body>
+</html>
